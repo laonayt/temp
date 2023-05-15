@@ -1,0 +1,14 @@
+apply from: "${project.rootDir}/module_biz.gradle"
+dependencies {
+    //主站flutter版本
+    def UPEX_FLUTTER_BASE_VERSION = "0.9.0-SNAPSHOT"
+    //小号flutter版本
+    def DAEBA_FLUTTER_BASE_VERSION = "0.0.103-SNAPSHOT"
+
+    //主站依赖
+    normalImplementation "com.upex.flutter:flutter_upex_base:$UPEX_FLUTTER_BASE_VERSION"
+    googleImplementation "com.upex.flutter:flutter_upex_base:$UPEX_FLUTTER_BASE_VERSION"
+    //小号依赖
+    daebaImplementation "com.upex.flutter:flutter_upex_base:$DAEBA_FLUTTER_BASE_VERSION"
+//    implementation project(path: ':flutter')
+}
